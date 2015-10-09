@@ -1,0 +1,27 @@
+{
+  "name": "ifoffers",
+  "version": "1.0.0",
+  "description": "可爱的阿�?",
+  "main": "app.js",
+  "start": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemonJu/itoffers_web.git"
+  },
+  "keywords": [
+    "it",
+    "offer"
+  ],
+  "author": "lemonju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lemonJu/itoffers_web/issues"
+  },
+  "homepage": "https://github.com/lemonJu/itoffers_web#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

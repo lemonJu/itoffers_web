@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//itoffers.cn:8080/app/offers/common/reset.css" />
+    <link rel="stylesheet" href="//itoffers.cn:8080/app/offers/css/travel.css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>travel</title>
+</head>
+
+<body>
+    <div class="head"></div>
+    <div class="travel-wrap">
+        <div class="nav">
+            <div id="navCity" class="nav-sec nav-city">
+                <h1 class="nav-title">城市</h1>
+                <div class="nav-content">
+                    <a href="">重庆</a>
+                    <a href="">重庆</a>
+                    <a href="">重庆</a>
+                </div>
+                <div id="navCity-more" class="nav-city-more">
+                    <a href="">重庆</a>
+                    <a href="">重庆</a>
+                    <a href="">重庆</a>
+                    <a href="">重庆</a>
+                    <a href="">重庆</a>
+                    <a href="">重庆</a>
+                    <a href="">重庆</a>
+                    <a href="">重庆</a>
+                    <a href="">重庆</a>
+                </div>
+            </div>
+            <div id="navTime" class="nav-sec nav-more">
+                <h1 class="nav-title">时间</h1>
+                <div class="nav-content">
+                    <a href="">7月</a>
+                    <a href="">8月</a>
+                    <a href="">9月</a>
+                </div>
+                <div id="navTime-more" class="nav-time-more">
+                <a href="">7月</a>
+                <a href="">8月</a>
+                <a href="">9月</a>
+                <a href="">7月</a>
+                <a href="">8月</a>
+                <a href="">9月</a>
+                <a href="">7月</a>
+                <a href="">8月</a>
+                <a href="">9月</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="content">
+            <div class="company-wrap">
+                <div class="content-company">
+                    <input id="Button1" type="button" value="点击弹出层" onclick="ShowDiv('MyDiv','fade')" />
+                    <!--弹出层时背景层DIV-->
+                    <div id="fade" class="black_overlay">
+                    </div>
+                    <div id="MyDiv" class="white_content">
+                        <div style="text-align: right; cursor: default; height: 40px;">
+                            <br />
+                            <span style="font-size: 16px;" onclick="CloseDiv('MyDiv','fade')">关闭</span>
+                        </div>
+                        遮罩层。
+                    </div>
+                    <br />
+                    <center>层的遮罩效果</center>
+                </div>
+                <div class="content-company"></div>
+                <div class="content-company"></div>
+                <div class="content-company"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+//弹出隐藏层
+function ShowDiv(show_div, bg_div) {
+    document.getElementById(show_div).style.display = 'block';
+    document.getElementById(bg_div).style.display = 'block';
+    var bgdiv = document.getElementById(bg_div);
+    bgdiv.style.width = document.body.scrollWidth;
+    // bgdiv.style.height = $(document).height();
+    //$("#" + bg_div).height($(document).height());
+};
+//关闭弹出层
+function CloseDiv(show_div, bg_div) {
+    document.getElementById(show_div).style.display = 'none';
+    document.getElementById(bg_div).style.display = 'none';
+};
+
+var $city = $('#navCity');
+var $cityMore = $('#navCity-more');
+console.log($city);
+$city.mouseenter(function() {
+    $cityMore.css('display', 'block');
+});
+$city.mouseleave(function() {
+    $cityMore.css('display', 'none');
+});
+
+
+var $time = $('#navTime');
+var $timeMore = $('#navTime-more');
+console.log($time);
+$time.mouseenter(function() {
+    $timeMore.css('display', 'block');
+});
+$time.mouseleave(function() {
+    $timeMore.css('display', 'none');
+});
+</script>
+
+</html>

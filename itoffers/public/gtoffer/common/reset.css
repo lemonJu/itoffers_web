@@ -1,0 +1,18 @@
+* {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: 'Microsoft YaHei';
+}
+
+.clearfix {
+    overflow: hidden;
+}
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}

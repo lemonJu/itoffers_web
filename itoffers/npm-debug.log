@@ -1,0 +1,24 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Program Files\\iojs\\node.exe',
+1 verbose cli   'D:\\Program Files\\iojs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@2.9.0
+3 info using node@v2.0.1
+4 verbose stack Error: missing script: start
+4 verbose stack     at run (D:\Program Files\iojs\node_modules\npm\lib\run-script.js:165:19)
+4 verbose stack     at D:\Program Files\iojs\node_modules\npm\lib\run-script.js:81:5
+4 verbose stack     at D:\Program Files\iojs\node_modules\npm\node_modules\read-package-json\read-json.js:345:5
+4 verbose stack     at checkBinReferences_ (D:\Program Files\iojs\node_modules\npm\node_modules\read-package-json\read-json.js:309:45)
+4 verbose stack     at final (D:\Program Files\iojs\node_modules\npm\node_modules\read-package-json\read-json.js:343:3)
+4 verbose stack     at then (D:\Program Files\iojs\node_modules\npm\node_modules\read-package-json\read-json.js:113:5)
+4 verbose stack     at D:\Program Files\iojs\node_modules\npm\node_modules\read-package-json\read-json.js:284:20
+4 verbose stack     at FSReqWrap.readFileAfterOpen [as oncomplete] (evalmachine.<anonymous>:305:5)
+5 verbose cwd F:\project\dev_web\itoffers
+6 error Windows_NT 6.3.9600
+7 error argv "D:\\Program Files\\iojs\\node.exe" "D:\\Program Files\\iojs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+8 error node v2.0.1
+9 error npm  v2.9.0
+10 error missing script: start
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
